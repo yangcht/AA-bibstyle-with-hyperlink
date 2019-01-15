@@ -1,3 +1,6 @@
+%% 2019/01 C Yang
+%% Enabling the ASDURL and DOI entry to create clickable links in ref.
+
 %% 2001/06/10 EDP Sciences
 %% APJ, corrected by hand to get results for A&A, using Natbib   
 
@@ -77,9 +80,9 @@ ENTRY
     editor
     howpublished
     institution
-    eprint                    %EDP Sciences le 30/11/2014
-	doi %% MAKE SURE THE ENTRIES DO NOT REPEAT!
-    url %% MAKE SURE THE ENTRIES DO NOT REPEAT!
+    eprint                    %% EDP Sciences le 30/11/2014
+    doi                       %% MAKE SURE THE ENTRIES DO NOT REPEAT!
+    url                       %% MAKE SURE THE ENTRIES DO NOT REPEAT!
     journal
     key
     month
