@@ -1116,7 +1116,7 @@ INTEGERS { nameptr namesleft numnames }
 
 FUNCTION {make.href.hyperref}
 {
-  "\href {" swap$ * "} {" * swap$ * "}" * }
+  "\href{" swap$ * "}{" * swap$ * "}" * 
 }
 
 
