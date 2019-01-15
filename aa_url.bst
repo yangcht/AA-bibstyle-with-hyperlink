@@ -94,7 +94,7 @@ ENTRY
     type
     volume
     year
-    adsurl % for MN style
+    adsurl  
   }
   {}
   { label extra.label sort.label short.list }
@@ -1150,8 +1150,13 @@ FUNCTION {article}
       format.pages output
     }
   if$
-  format.journal.pages adsurl make.href.hyperref 
-  format.note output
+  adsurl empty$
+  	{ format.vol.num.pages output }
+  	{
+  	format.journal.pages adsurl make.href.hyperref 
+  	format.note output
+	}
+	if$
   %format.eprint outputeprint                      %EDP Sciences le 30/11/2014
   fin.entry
 }
