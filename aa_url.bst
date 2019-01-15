@@ -1,5 +1,5 @@
 %% 2019/01 C Yang
-%% Enabling the ASDURL and DOI entry to create clickable links in ref.
+%% Enabling the ADSURL and DOI entry to create clickable links in ref.
 
 %% 2001/06/10 EDP Sciences
 %% APJ, corrected by hand to get results for A&A, using Natbib   
