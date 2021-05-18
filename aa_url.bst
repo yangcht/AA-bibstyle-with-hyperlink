@@ -1111,7 +1111,7 @@ FUNCTION {format.full.book.spec} % The title should be on the stack.
 %%%%%%%  End of functions from astrobib
 
 
-INTEGERS { nameptr namesleft numnames }
+% INTEGERS { nameptr namesleft numnames }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
