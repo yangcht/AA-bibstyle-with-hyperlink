@@ -1154,7 +1154,7 @@ FUNCTION {article}
     }
   if$
   adsurl empty$
-  	{ format.vol.num.pages output }
+  	{ format.journal.pages output }
   	{
   	format.journal.pages adsurl make.href.hyperref 
   	format.note output
