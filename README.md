@@ -41,3 +41,7 @@
 ## See an example below
 
 ![example](./example.png)
+
+
+## Notes:
+- Some users report that the `color` package generates some warning and switch to `xcolor` might help.
