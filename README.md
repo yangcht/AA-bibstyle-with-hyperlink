@@ -1,10 +1,12 @@
-# A&A-bibstyle-with-hyperlink
+# Introduction: A&A-bibstyle-with-hyperlink
 - modified `aa.bst` with clickable url links in the bibliography
 - bst file for Astronomy & Astrophysical Journal
 - modified based on the `aa.bst` file from http://ftp.edpsciences.org/pub/aa/readme.html
 - it is recommended to **use the bibtex record generated from NASA/ADS** in order to include `doi` and `adsurl` properly
 
-## For making the links and colors work, you should also add something like the following in the preamble of the .TeX file
+# How to use:
+- Put this `aa_rul.bst` in your project folder and reference this with `\bibliographystyle{folder/aa_url.bst}`
+- For making the links and colors work, **MAKE SURE** to add something like the following in the preamble of your .TeX file
 
 ```
 %---------- Add the clickable link function ----------
@@ -38,7 +40,8 @@
 \makeatother
 ```
 
-## See an example below
+# Examples:
+This is a demo of the function of this bibstyle.
 
 ![example](./example.png)
 
