@@ -477,6 +477,11 @@ FUNCTION {format.names}
   while$
 }
 
+FUNCTION {format.names.ed}
+{
+  format.names
+}
+
 FUNCTION {format.key}
 { empty$
     { key field.or.null }
@@ -499,6 +504,14 @@ FUNCTION {format.editors}
         { ", " * bbl.editors * }
         { ", " * bbl.editor * }
       if$
+    }
+  if$
+}
+
+FUNCTION {format.in.editors}
+{ editor empty$
+    { "" }
+    { editor format.names.ed
     }
   if$
 }
@@ -725,7 +738,7 @@ FUNCTION {format.number.series}
         { output.state mid.sentence =
             { bbl.number }
             { bbl.number capitalize }
-          if
+          if$
           number tie.or.space.connect
           series empty$
             { "there's a number but no series in " cite$ * warning$ }
