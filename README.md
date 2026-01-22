@@ -5,7 +5,7 @@
 - it is recommended to **use the bibtex record generated from NASA/ADS** in order to include `doi` and `adsurl` properly
 
 # How to use:
-- Put this `aa_rul.bst` in your project folder and reference this with `\bibliographystyle{folder/aa_url.bst}`
+- Put this `aa_url.bst` in your project folder and reference this with `\bibliographystyle{folder/aa_url.bst}`
 - For making the links and colors work, **MAKE SURE** to add something like the following in the preamble of your .TeX file
 
 ```
@@ -24,13 +24,13 @@
   urlcolor=cobalt,
 }
 \makeatletter
-  \newcommandtwoopt{\citeads}[3][][]{\href{http://adsabs.harvard.edu/abs/#3}%
+  \newcommandtwoopt{\citeads}[3][][]{\href{http://ui.adsabs.harvard.edu/abs/#3}%
     {\def\hyper@linkstart##1##2{}%
      \let\hyper@linkend\@empty\citealp[#1][#2]{#3}}}
-  \newcommandtwoopt{\citepads}[3][][]{\href{http://adsabs.harvard.edu/abs/#3}%
+  \newcommandtwoopt{\citepads}[3][][]{\href{http://ui.adsabs.harvard.edu/abs/#3}%
     {\def\hyper@linkstart##1##2{}%
      \let\hyper@linkend\@empty\citep[#1][#2]{#3}}}
-  \newcommandtwoopt{\citetads}[3][][]{\href{http://adsabs.harvard.edu/abs/#3}%
+  \newcommandtwoopt{\citetads}[3][][]{\href{http://ui.adsabs.harvard.edu/abs/#3}%
     {\def\hyper@linkstart##1##2{}%
      \let\hyper@linkend\@empty\citet[#1][#2]{#3}}}
   \newcommandtwoopt{\citeyearads}[3][][]%
